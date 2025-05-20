@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Scheduler</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Job Scheduler (Max Profit)</h1>
+      <label class="toggle-switch">
+        <button
+          id="darkModeToggle"
+          class="dark-toggle"
+          title="Toggle Dark Mode"
+        >
+          🌙
+        </button>
+
+        <span class="slider"></span>
+      </label>
+
+      <form id="jobForm">
+        <input type="text" id="jobId" placeholder="Job ID" required />
+        <input type="number" id="deadline" placeholder="Deadline" required />
+        <input type="number" id="profit" placeholder="Profit" required />
+        <button type="submit">Add Job</button>
+      </form>
+
+      <button id="scheduleBtn">Run Scheduler</button>
+      <button id="roundRobinBtn">Run Round-Robin Scheduler</button>
+      <button id="clearBtn">Clear Jobs</button>
+
+      <div class="output">
+        <h2>Scheduled Jobs</h2>
+        <ul id="scheduleList"></ul>
+        <p id="totalProfit"></p>
+        <div id="summaryStats"></div>
+      </div>
+    </div>
+    <div class="gantt-container">
+      <h2>Gantt Chart</h2>
+      <div id="ganttChart"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
