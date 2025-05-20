@@ -52,7 +52,7 @@
 
 ## 🚀 How to Run
 
-### 🔗 [Live Demo on Netlify](https://your-netlify-url.netlify.app) *(replace with your URL)*
+### 🔗 https://job-scheduler-2025.netlify.app/
 
 ### 📥 Run Locally
 1. Clone or download this repo
